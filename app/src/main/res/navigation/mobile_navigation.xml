@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.hanhhoai.orderfoodltdd.ui.home.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.hanhhoai.orderfoodltdd.ui.oder.OrderFragment"
+        android:label="MY ORDERS"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.hanhhoai.orderfoodltdd.ui.Me.MeFragment"
+        android:label="ME"
+        tools:layout="@layout/fragment_me" />
+    <fragment
+        android:id="@+id/add_foodFragment"
+        android:name="com.hanhhoai.orderfoodltdd.ui.add_food.AddFoodFragment"
+        android:label="ADD FOOD" />
+</navigation>
